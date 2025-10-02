@@ -16,8 +16,24 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
+})->name('home');
+Route::get('biodata/raisya', function () {
+    return view('biodata/raisya');
 });
+Route::get('biodata/yoshicato', function () {
+    return view('biodata/yoshicato');
+});
+Route::get('biodata/faisal', function () {
+    return view('biodata/faisal');
+});
+Route::get('biodata/nino', function () {
+    return view('biodata/nino');
+});
+Route::get('biodata/bagus', function () {
+    return view('biodata/bagus');
+});
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');
